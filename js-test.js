@@ -1,3 +1,8 @@
+
+const names = ["john", "martha", "pamela", "brian", "caoimhe", "fintan"];
+
+const groups = ["x", "y", "z"];
+
 /**
  * Return a random string to use as an ID.
  * @returns String
@@ -15,10 +20,6 @@ const generateId = () => {
 const randomItem = (arrLength) => {
   return Math.floor(Math.random() * arrLength);
 };
-
-const names = ["john", "martha", "pamela", "brian", "caoimhe", "fintan"];
-
-const groups = ["x", "y", "z"];
 
 /**
  * Generate n amount of user objects.
