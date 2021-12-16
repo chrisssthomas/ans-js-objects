@@ -22,7 +22,7 @@ const names = ["john", "martha", "pamela", "brian", "caoimhe", "fintan"];
 
 const groups = ["x", "y", "z"];
 
-function generateUsers(n) {
+const generateUsers = (n) => {
   arr = [];
   for (i = 1; i < n; i++) {
     arr.push({
