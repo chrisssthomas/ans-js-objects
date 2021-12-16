@@ -26,9 +26,9 @@ const generateUsers = (n) => {
   arr = [];
   for (i = 1; i < n; i++) {
     arr.push({
+      id: generateId(),
       name: names[randomItem(names.length)],
       group: groups[randomItem(groups.length)],
-      id: generateId(),
     });
   }
   console.log(arr);
