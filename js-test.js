@@ -14,8 +14,8 @@ const generateId = () => {
   return Math.random().toString(36).substr(2, 9);
 };
 
-const randomItem = (arr) => {
-  return Math.floor(Math.random() * arr.length);
+const randomItem = (arrLength) => {
+  return Math.floor(Math.random() * arrLength);
 };
 
 const names = ["john", "martha", "pamela", "brian", "caoimhe", "fintan"];
@@ -26,8 +26,8 @@ function generateUsers(n) {
   arr = [];
   for (i = 1; i < n; i++) {
     arr.push({
-      name: names[randomItem(names)],
-      group: groups[randomItem(groups)],
+      name: names[randomItem(names.length)],
+      group: groups[randomItem(groups.length)],
       id: generateId(),
     });
   }
