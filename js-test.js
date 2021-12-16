@@ -5,7 +5,7 @@ const groups = ["x", "y", "z"];
 
 /**
  * Return a random string to use as an ID.
- * @returns String
+ * @returns string
  */
 const generateId = () => {
   return Math.random().toString(36).substr(2, 9);
@@ -15,7 +15,7 @@ const generateId = () => {
  * Generate a random int in the range of
  * the number value given
  * @param {number} arrLength 
- * @returns 
+ * @returns {number}
  */
 const randomItem = (arrLength) => {
   return Math.floor(Math.random() * arrLength);
@@ -24,6 +24,7 @@ const randomItem = (arrLength) => {
 /**
  * Generate n amount of user objects.
  * @param {number} n 
+ * @returns void
  */
 const generateUsers = (n) => {
   arr = [];
